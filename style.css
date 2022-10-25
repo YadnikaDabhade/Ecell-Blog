@@ -1,0 +1,180 @@
+body{
+    background-color: #fcfcfc;
+}
+.hero{
+    width: 100%;
+   height: 30vh;
+    background: url("./collegea.png") top center;
+    background-size: cover;
+    position: relative;
+    padding: 120px 0;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+.hero h1{
+    font-size: 5rem;
+    margin-right: 2.7rem;
+}
+.one{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero img{
+    width: 12em;
+    height: 10em;
+   
+}
+@media (min-width: 1034px) {
+    .hero:after {
+      position: absolute;
+      content: "";
+      width: 40%;
+      background: var(--color-secondary);
+      top: 0;
+      bottom: 0;
+    }
+  }
+  
+  .hero:before {
+    position: absolute;
+    content: "";
+    background: rgba(32, 44, 57, 0.5);
+    inset: 0;
+  }
+  
+  @media (max-width: 1034px) {
+    .hero:before {
+      background: rgba(36, 50, 66, 0.5);
+    }
+  }
+  
+  .hero .container {
+    z-index: 1;
+  }
+  
+  @media (min-width: 1365px) {
+    .hero {
+      background-attachment: fixed;
+    }
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2rem;
+
+  }
+
+  .card button{
+    width: 8rem;
+    background-color:black;
+    border: none;
+    height: 3rem;
+    color: white;
+    border-radius: 3rem;
+    text-align: center;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .head{
+    display: flex;
+    flex-direction: column;
+    line-height: 10%;
+  }
+  .head span{
+    margin-bottom: 3rem;
+    color: black;
+    opacity: 100%;
+    font-weight: 900;
+    font-family:  opensans-light, sans-serif;;
+  }
+  .card span{
+    font-size: 1.4rem;
+    margin: 1rem;
+    font-family:  opensans-light, sans-serif;;
+
+  }
+  .btn :hover{
+    background-color: #0f9095;
+    width: 8rem;
+    height: 3rem;
+    border-radius: 3rem;
+    border: none;
+  }
+
+  .card img{
+    width: 15em;
+    height: 15em;
+    border-radius: 2rem;
+    box-shadow: 0 1px 2px rgba(15, 144, 149, 0.995), 0 2px 4px rgba(15, 144, 149, 0.963),
+    0 4px 8px rgba(15, 144, 149, 0.963), 0 8px 16px rgba(15, 144, 149 0.963),
+    0 16px 32px rgba(15, 144, 149, 0.963),0 32px 64px rgba(15, 144, 149, 0.963);
+  }
+  .row{
+    display: flex;
+    justify-content: space-around;
+  }
+  .datarows{
+    display: flex;
+    flex-direction: column;
+
+  }
+  .heading{
+    text-align: center;
+    margin-top: 4rem;
+
+  }
+  hr{
+    color: black;
+  }
+  .container{
+    margin-top: 3rem;
+  }
+  .modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.modal-content{
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    padding: 20px;
+    width: 50%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2),0 7px 20px 0 rgba(0, 0, 0, 0.3);
+    animation-name: modalOpen;
+    animation-duration: 1s;
+
+}
+.closebtn{
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+
+}
+.closebtn:hover,.closebtn:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.count{
+    font-size: medium;
+}
+
+
+@keyframes modalOpen {
+    from{opacity: 0}
+    to {opacity: 1}
+    
+}
+  
+  
+  
