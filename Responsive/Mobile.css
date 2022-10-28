@@ -1,0 +1,50 @@
+ * {
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+ }
+
+ @media screen and (max-width: 650px) {
+     .hero {
+         background-image: url("../collegea.png");
+         background-size: cover;
+         background-position: center;
+         width: 45vh;
+
+     }
+
+     .one h1 {
+         font-size: 2rem;
+     }
+
+     .head span {
+         position: absolute;
+         border: 3rem;
+         left: 1rem;
+         font-size: 11px;
+         width: 40rem;
+         color: rgb(0, 0, 0);
+         font-weight: 300;
+         font-family: cursive, opensans-light, sans-serif;
+         ;
+     }
+
+     .form {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         justify-content: space-around;
+         margin: 2rem;
+     }
+
+         .row1 {
+             display: flex;
+             gap: 1rem;
+             flex-direction: column;
+         }
+
+                 .contact .php-email-form {
+    
+                     padding: 0% 0rem;
+                 }
+ }
